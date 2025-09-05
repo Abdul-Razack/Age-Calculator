@@ -13,8 +13,8 @@ function age(){
       time= d.getTime();
       cd = new Date(); 
       ctime = cd.getTime(); 
-      InYears=(Math.round(((ctime-time)/cyear))-1);
-      InMonths=(Math.round(((ctime-time)/month)-1)); 
+      InYears=(Math.round(((ctime-time)/cyear)));
+      InMonths=(Math.round(((ctime-time)/month))); 
       InWeeks=(Math.round(((ctime-time)/week)));
       InDays=(Math.round(((ctime-time)/day)));
       InHours=(Math.round(((ctime-time)/hour)));
@@ -28,6 +28,7 @@ function age(){
       document.getElementById("InMinutes").innerHTML= InMinutes;
       document.getElementById("InSeconds").innerHTML= InSeconds;
 }
+
 
 
 
